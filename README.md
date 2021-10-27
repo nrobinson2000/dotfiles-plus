@@ -1,5 +1,3 @@
-# dotfiles
+# dotfiles-plus
 
-Testing out Gitea
-
-Gitea is really cool
+Like [arch-base](https://github.com/nrobinson2000/arch-base) but more based.
