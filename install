@@ -17,6 +17,9 @@ $PACMAN_INSTALL base-devel || exit
 # Patch pacman.conf
 sudo patch -d/ -p0 -Nr- -i $PWD/system/pacman.patch
 
+# Update packages
+sudo pacman -Syu
+
 # Install yay
 source bin/install-yay
 
