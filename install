@@ -24,8 +24,9 @@ sudo pacman -Syu
 # Install yay
 source bin/install-yay
 
-# Uninstall vim
+# Replace vim with gvim
 sudo pacman -R --noconfirm vim
+$PACMAN_INSTALL gvim
 
 # Install packages
 $YAY_INSTALL - < packages/aur
