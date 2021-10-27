@@ -12,6 +12,8 @@ Run the following to install my packages and settings to replicate my desktop en
 ./install
 ```
 
+After the script completes, reboot your system and you should be presented with a graphical login.
+
 Since this script does not make any assumptions about your graphics card or
 bootloader you should install and configure the appropriate packages if
 necessary.
