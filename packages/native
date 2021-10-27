@@ -52,6 +52,8 @@ tree
 unzip
 usbutils
 viewnior
+vim-airline
+vim-molokai
 vlc
 xclip
 xorg-xrandr
