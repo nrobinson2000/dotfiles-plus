@@ -1,0 +1,5 @@
+#!/bin/bash
+echo "Configuring mirrorlist with reflector..."
+sudo pacman -S --noconfirm --needed reflector rsync || exit
+sudo mv /etc/pacman.d/mirrorlist /etc/pacman.d/mirrorlist.bak
+sudo reflector --latest 20 --sort rate --country 'United States' --protocol https --save /etc/pacman.d/mirrorlist

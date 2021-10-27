@@ -1,0 +1,6 @@
+auto-cpufreq.service
+bluetooth.service
+cups.service
+lightdm.service
+NetworkManager.service
+sshd.service

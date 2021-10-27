@@ -1,0 +1,39 @@
+#!/bin/bash
+
+PACMAN_INSTALL="sudo pacman -S --noconfirm --needed"
+YAY_INSTALL="yay -S --removemake --noconfirm --needed"
+
+pacman -Qq pacman &> /dev/null || echo "Not running on Arch!" && exit 
+
+# Clone submodules
+git submodule update --init
+
+# Refresh mirrors
+source bin/refresh-mirrorlist
+
+# Install base-devel group
+$PACMAN_INSTALL base-devel || exit
+
+# Install yay
+source bin/install-yay
+
+# Install packages
+
+
+# Apply settings
+
+# Copy dotfiles
+find dotfiles -name '.*' ! -name '.git' -exec cp {} $HOME \;
+
+# lightdm
+lightdm
+lightdm-settings
+lightdm-slick-greeter
+
+# Patch lightdm
+sudo patch -d/ -p0 -Nr- -i $PWD/system/lightdm.patch
+
+# systemd services
+xargs sudo systemctl enable < system/services
+
+# dconf settings

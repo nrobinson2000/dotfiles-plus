@@ -1,0 +1,5 @@
+#!/bin/bash
+echo "Installing yay..."
+pushd yay-bin
+makepkg -sifc --noconfirm
+popd
