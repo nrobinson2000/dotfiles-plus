@@ -21,15 +21,15 @@ gnome-system-monitor
 gnome-terminal
 grub
 gutenprint
+gvim
 htop
 hunspell-en_us
-intel-ucode
 kvantum-qt5
 linux
 linux-firmware
 man-db
+moreutils
 mpv
-muparser
 nemo-fileroller
 nemo-preview
 nemo-python
@@ -43,11 +43,8 @@ papirus-icon-theme
 parcellite
 plank
 qt5ct
-r
-r8168
 reflector
 rsync
-rust
 screen
 system-config-printer
 tmux
@@ -55,7 +52,6 @@ tree
 unzip
 usbutils
 viewnior
-vim
 vlc
 xclip
 xorg-xrandr
