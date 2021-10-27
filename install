@@ -3,7 +3,7 @@
 PACMAN_INSTALL="sudo pacman -S --noconfirm --needed"
 YAY_INSTALL="yay -S --removemake --noconfirm --needed"
 
-pacman -Qq pacman &> /dev/null || echo "Not running on Arch!" && exit 
+pacman -Qq pacman &> /dev/null || (echo "Not running on Arch!" && exit)
 
 # Clone submodules
 git submodule update --init
