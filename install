@@ -18,10 +18,14 @@ $PACMAN_INSTALL base-devel || exit
 sudo patch -d/ -p0 -Nr- -i $PWD/system/pacman.patch
 
 # Update packages
+sudo pacman-key --populate archlinux
 sudo pacman -Syu
 
 # Install yay
 source bin/install-yay
+
+# Uninstall vim
+sudo pacman -R --noconfirm --needed vim
 
 # Install packages
 $YAY_INSTALL - < packages/aur
