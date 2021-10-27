@@ -25,7 +25,7 @@ sudo pacman -Syu
 source bin/install-yay
 
 # Uninstall vim
-sudo pacman -R --noconfirm --needed vim
+sudo pacman -R --noconfirm vim
 
 # Install packages
 $YAY_INSTALL - < packages/aur
