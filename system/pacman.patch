@@ -1,0 +1,29 @@
++++ /etc/pacman/pacman.conf
+@@ -29,12 +29,12 @@
+ #NoExtract   =
+ 
+ # Misc options
+-#UseSyslog
+-#Color
++UseSyslog
++Color
+ #NoProgressBar
+ CheckSpace
+-#VerbosePkgLists
+-#ParallelDownloads = 5
++VerbosePkgLists
++ParallelDownloads = 12
+ 
+ # By default, pacman accepts packages signed by keys that its local keyring
+ # trusts (see pacman-key and its man page), as well as unsigned packages.
+@@ -90,8 +90,8 @@
+ #[multilib-testing]
+ #Include = /etc/pacman.d/mirrorlist
+ 
+-#[multilib]
+-#Include = /etc/pacman.d/mirrorlist
++[multilib]
++Include = /etc/pacman.d/mirrorlist
+ 
+ # An example of a custom package repository.  See the pacman manpage for
+ # tips on creating your own repositories.

@@ -14,17 +14,19 @@ source bin/refresh-mirrorlist
 # Install base-devel group
 $PACMAN_INSTALL base-devel || exit
 
+# Patch pacman.conf
+sudo patch -d/ -p0 -Nr- -i $PWD/system/pacman.patch
+
 # Install yay
 source bin/install-yay
 
 # Install packages
-
 $YAY_INSTALL - < packages/aur
 $YAY_INSTALL - < packages/native
 
 # lightdm
-
 # nvidia
+# refind
 
 # Patch lightdm
 sudo patch -d/ -p0 -Nr- -i $PWD/system/lightdm.patch
