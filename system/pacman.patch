@@ -1,4 +1,4 @@
-+++ /etc/pacman/pacman.conf
++++ /etc/pacman.conf
 @@ -29,12 +29,12 @@
  #NoExtract   =
  
