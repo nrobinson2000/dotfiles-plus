@@ -39,14 +39,14 @@ xargs sudo systemctl enable < system/services
 
 # Application settings
 mkdir -p $HOME/.config
-find config -exec cp {} $HOME/.config \;
+find config -exec cp {} -rf $HOME/.config \;
 
 # Cinnamon settings
 mkdir -p $HOME/.cinnamon
-find cinnamon/configs -exec cp {} $HOME/.cinnamon \;
+find cinnamon/configs -exec cp -rf {} $HOME/.cinnamon \;
 
 # dconf settings
 dconf load / < cinnamon/all.conf
 
 # Copy dotfiles
-find dotfiles -name '.*' ! -name '.git' -exec cp {} $HOME \;
+find dotfiles -name '.*' ! -name '.git' -exec cp -rf {} $HOME \;
