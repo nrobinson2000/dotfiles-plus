@@ -19,16 +19,12 @@ source bin/install-yay
 
 # Install packages
 
-
-# Apply settings
-
-# Copy dotfiles
-find dotfiles -name '.*' ! -name '.git' -exec cp {} $HOME \;
+$YAY_INSTALL - < packages/aur
+$YAY_INSTALL - < packages/native
 
 # lightdm
-lightdm
-lightdm-settings
-lightdm-slick-greeter
+
+# nvidia
 
 # Patch lightdm
 sudo patch -d/ -p0 -Nr- -i $PWD/system/lightdm.patch
@@ -36,4 +32,16 @@ sudo patch -d/ -p0 -Nr- -i $PWD/system/lightdm.patch
 # systemd services
 xargs sudo systemctl enable < system/services
 
+# Application settings
+mkdir -p $HOME/.config
+find config -exec cp {} $HOME/.config \;
+
+# Cinnamon settings
+mkdir -p $HOME/.cinnamon
+find cinnamon/configs -exec cp {} $HOME/.cinnamon \;
+
 # dconf settings
+dconf load / < cinnamon/all.conf
+
+# Copy dotfiles
+find dotfiles -name '.*' ! -name '.git' -exec cp {} $HOME \;
