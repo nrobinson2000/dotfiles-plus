@@ -8,11 +8,14 @@ bash-completion
 bluez
 bluez-utils
 cheese
-chromium
 cinnamon
 cups
 dconf-editor
-efibootmgr
+firefox
+firefox-clearurls
+firefox-extension-https-everywhere
+firefox-extension-privacybadger
+firefox-ublock-origin
 fzf
 gimp
 git
