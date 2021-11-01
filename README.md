@@ -24,8 +24,8 @@ necessary.
 
 ## Preview
 
-![login window][images/login-window.png]
-![desktop][images/desktop.png]
+![login window](images/login-window.png)
+![desktop](images/desktop.png)
 
 
 ## Notes
