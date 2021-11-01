@@ -18,6 +18,15 @@ Since this script does not make any assumptions about your graphics card or
 bootloader you should install and configure the appropriate packages if
 necessary.
 
+## Recording
+
+[![asciicast](https://asciinema.org/a/446096.svg)](https://asciinema.org/a/446096)
+
+## Preview
+
+![login window][images/login-window.png]
+![desktop][images/desktop.png]
+
 
 ## Notes
 
