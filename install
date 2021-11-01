@@ -35,6 +35,9 @@ $YAY_INSTALL - < packages/native
 # Patch lightdm
 sudo patch -d/ -p0 -Nr- -i $PWD/system/lightdm.patch
 
+# Configure lightdm-slick-greeter
+sudo cp system/slick-greeter.conf /etc/lightdm
+
 # Enable avahi-daemon
 sudo patch -d/ -p0 -Nr- -i $PWD/system/nsswitch.patch
 
