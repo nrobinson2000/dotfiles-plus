@@ -22,10 +22,15 @@ necessary.
 
 [![asciicast](https://asciinema.org/a/446096.svg)](https://asciinema.org/a/446096)
 
-## Preview
+## Screenshots
 
 ![login window](images/login-window.png)
+
+Login window featuring [lightdm-slick-greeter](https://archlinux.org/packages/community/x86_64/lightdm-slick-greeter)
+
 ![desktop](images/desktop.png)
+
+Cinnamon desktop environment featuring [adapta theme](https://archlinux.org/packages/community/any/adapta-gtk-theme) and [plank dock](https://archlinux.org/packages/community/x86_64/plank)
 
 
 ## Notes
