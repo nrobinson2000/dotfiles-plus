@@ -1,4 +1,5 @@
 auto-cpufreq.service
+avahi-daemon.service
 bluetooth.service
 cups.service
 lightdm.service
