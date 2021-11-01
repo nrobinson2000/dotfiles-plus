@@ -3,5 +3,6 @@ avahi-daemon.service
 bluetooth.service
 cups.service
 lightdm.service
+linux-modules-cleanup.service
 NetworkManager.service
 sshd.service
