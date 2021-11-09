@@ -2,7 +2,6 @@ adapta-gtk-theme
 alsa-utils
 arp-scan
 asciinema
-avahi
 baobab
 base
 bash-completion
@@ -46,6 +45,7 @@ nemo-share
 neofetch
 networkmanager
 nmap
+nss-mdns
 os-prober
 pacman-contrib
 papirus-icon-theme
