@@ -59,4 +59,4 @@ find cinnamon/configs -exec cp -rf {} $HOME/.cinnamon \;
 dconf load / < cinnamon/all.conf
 
 # Copy dotfiles
-find dotfiles -name '.*' ! -name '.git' -exec cp -rf {} $HOME \;
+find dotfiles -name '.*' ! -name '.git' ! -name '.xinitrc' -exec cp -rf {} $HOME \;
