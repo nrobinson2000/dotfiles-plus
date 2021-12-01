@@ -1,6 +1,7 @@
 # dotfiles-plus
 
-Similar to [arch-base](https://github.com/nrobinson2000/arch-base) but more concise.
+Similar to [arch-base](https://github.com/nrobinson2000/arch-base) but more
+concise. All future documentation of my Arch Linux setup will be kept here.
 
 ## Installation
 
@@ -12,11 +13,11 @@ Run the following to install my packages and settings to replicate my desktop en
 ./install
 ```
 
-After the script completes, reboot your system and you should be presented with a graphical login.
+After the script completes, reboot your system. You should be presented with a
+graphical login on boot.
 
-Since this script does not make any assumptions about your graphics card or
-bootloader you should install and configure the appropriate packages if
-necessary.
+> Since this script does not make any assumptions about your graphics card or
+bootloader you should install and configure the appropriate packages if necessary.
 
 ## Recording
 
@@ -36,5 +37,5 @@ Cinnamon desktop environment featuring [adapta theme](https://archlinux.org/pack
 ## Notes
 
 This script was designed with good intentions and to speed up the process of
-installing Arch Linux. There may be bugs and I do not accept any liability for
-damage this script may cause to your system.
+installing my desktop environment settings on Arch Linux. There may be bugs and
+I do not accept any liability for damage this script may cause to your system.
